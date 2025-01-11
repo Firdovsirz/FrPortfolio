@@ -1,0 +1,11 @@
+{
+    "home-intro-schedule-call": "Zəng sifariş edin",
+    "home-intro-heading": "Salam, mən Firdovsi Rzaev, Frontend Developer",
+    "home-features-heading": "Fərqli xüsusiyyətlərimizi açın",
+    "home-features-desc": "Müasir texnologiyalarla müasir, cavabdeh və istifadəçi dostu veb təcrübələri hazırlamaq. Təmiz kodu və sorunsuz dizayn üzərində bir diqqət ilə.",
+    "home-feature-reponse-desc": "Qurduğum hər bir layihə bütün cihazlarda sorunsuz istifadəçi təcrübələrini təmin etmək, mobil, tablet və ya masaüstü ekranından asılı olmayaraq tam cavab verir.",
+    "home-feature-modern-web": "Müasir veb texnologiyaları",
+    "home-feature-modern-web-desc": "HTML5, CSS3, JavaScript (ES6 +), reaksiya daxil olmaqla, ən son cəbhə texnologiyalarından istifadə etməkdə bacarıqlıyam. Məqsədim genişlənə bilən, yüksək performanslı tətbiqlər yaratmaqdır.",
+    "home-feature-git": "Git ilə versiya idarəetmə",
+    "home-feature-git-desc": "Effektiv əməkdaşlıq və kod idarəçiliyini təmin edən versiya nəzarəti üçün Git və Github istifadə edirəm. Bütün layihələrim asan naviqasiya üçün ətraflı bağlı tarix ilə izlənilir."
+}
