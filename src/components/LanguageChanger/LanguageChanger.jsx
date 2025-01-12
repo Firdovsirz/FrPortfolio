@@ -1,5 +1,5 @@
 import i18n from '../../language/i18n';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from "./LanguageChanger.module.scss";
 import EnFlag from "../../assets/language/uk-flag.png";
@@ -12,6 +12,22 @@ export default function LanguageChanger() {
     const [currentLang, setCurrentLang] = useState('En');
     const [currentFlag, setCurrentFlag] = useState(EnFlag);
     const { t, i18n } = useTranslation();
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY >= 50) {
+            setIsScrolled(true);
+        } else {
+            setIsScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     const handleAvalList = () => {
         setAvalList(!avalList);
     }
@@ -45,7 +61,12 @@ export default function LanguageChanger() {
         currentLang === 'Ru' ? null : RuFlag
     ];
     return (
-        <div className={styles['language-changer-container']}>
+        <div className={styles['language-changer-container']} style={isScrolled ? {
+            background: "#000",
+            height: 60,
+            padding: 10,
+            borderRadius: 10
+        } : null}>
             <div className={styles['lang-ch-main-container']}>
                 <div className={styles['current-lang-container']} onClick={handleAvalList}>
                     <img src={currentFlag} alt="current-language-flag" />

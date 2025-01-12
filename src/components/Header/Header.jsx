@@ -29,37 +29,39 @@ export default function Header() {
                     background: "rgba(26, 26, 26, 0.5)",
                     backdropFilter: "blur(10px)",
                     width: "fit-content",
-                    transition: 'width 800ms',
+                    transition: 'all 800ms',
                     borderRadius: 20
-                } : null
+                } : { width: "95%" }
             }>
                 <div className={styles['header-logo-container']}>
                     FR
                 </div>
                 <div className={styles['header-links']}>
-                    <ul className={styles['header-link-list']} style={isScrolled ? {background: "#000", padding: "5px 10px", borderRadius: 10} : null}>
-                        <li style={isScrolled ? {color: "#fff"} : null}>
-                            {t('header-home', { ns: "header" })}
-                        </li>
-                        <li style={isScrolled ? {color: "#fff"} : null}>
-                            {t('header-works', { ns: "header" })}
-                        </li>
-                        <li style={isScrolled ? {color: "#fff"} : null}>
-                            {t('header-about', { ns: "header" })}
-                        </li>
-                        <li style={isScrolled ? {color: "#fff"} : null}>
-                            {t('header-contact', { ns: "header" })}
-                        </li>
-                        <li style={isScrolled ? {color: "#fff"} : null}>
+                    <ul className={styles['header-link-list']} >
+                        <div className={styles['header-link-container']} style={isScrolled ? { background: "#000", padding: "5px 10px", borderRadius: 10 } : null}>
+                            <li style={isScrolled ? { color: "#fff" } : null}>
+                                {t('header-home', { ns: "header" })}
+                            </li>
+                            <li style={isScrolled ? { color: "#fff" } : null}>
+                                {t('header-works', { ns: "header" })}
+                            </li>
+                            <li style={isScrolled ? { color: "#fff" } : null}>
+                                {t('header-about', { ns: "header" })}
+                            </li>
+                            <li style={isScrolled ? { color: "#fff" } : null}>
+                                {t('header-contact', { ns: "header" })}
+                            </li>
+                        </div>
+                        <li style={isScrolled ? { color: "#fff" } : null}>
                             <LanguageChanger />
                         </li>
                         <li>
-                            <div style={isScrolled ? {background: "#fff"} : null}>
-                                <p style={isScrolled ? {color: "#000"} : null}>
+                            <div style={isScrolled ? { background: "#fff", height: 60 } : null}>
+                                <p style={isScrolled ? { color: "#000" } : null}>
                                     {t('header-download-resume', { ns: "header" })}
                                     <DownloadIcon style={{ marginLeft: 10 }} />
                                 </p>
-                                <p style={isScrolled ? {color: "#000"} : null}>
+                                <p style={isScrolled ? { color: "#000" } : null}>
                                     {t('header-download-resume', { ns: "header" })}
                                     <DownloadIcon style={{ marginLeft: 10 }} />
                                 </p>

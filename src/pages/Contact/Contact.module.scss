@@ -1,0 +1,315 @@
+.contact-main {
+    background: #fff;
+    width: 100vw;
+    height: 100%;
+    padding: 200px 140px;
+
+    .contact-intro-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+
+        .contact-intro-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p:first-child {
+                border: 1px solid rgb(213, 213, 213);
+                padding: 10px 20px;
+                border-radius: 20px;
+                color: rgb(126, 126, 126);
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            p:last-child {
+                font-size: 25px;
+                width: 400px;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+    }
+
+    .contact-details-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .contact-details-container {
+            width: 100%;
+
+            .contact-details-phone {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .contact-detail-message,
+                .contact-detail-call,
+                .contact-detail-telegram {
+                    width: calc(100% / 3 - 30px);
+                    height: 300px;
+
+                    .contact-detail-message-bg,
+                    .contact-detail-call-bg,
+                    .contact-detail-telegram-bg {
+                        background: rgb(230, 230, 230);
+                        padding: 10px;
+                        border-radius: 25px;
+
+                        .contact-detial-message-main-container,
+                        .contact-detial-call-main-container,
+                        .contact-detail-telegram-main-container {
+                            background: #fff;
+                            padding: 20px;
+                            border-radius: 15px;
+
+                            .contact-detail-message-main,
+                            .contact-detail-call-main,
+                            .contact-detail-telegram-main {
+                                .contact-detail-icon {
+                                    color: #b5b5b5;
+                                    font-size: 30px;
+                                    margin-bottom: 20px;
+                                }
+
+                                .contact-detail-message-txt,
+                                .contact-detail-call-txt,
+                                .contact-detail-telegram-txt {
+                                    h2 {
+                                        font-weight: 300;
+                                        font-size: 25px;
+                                        margin-bottom: 10px;
+                                        height: 30px;
+                                    }
+
+                                    p {
+                                        font-size: 20px;
+                                        font-weight: 300;
+                                        height: 100px;
+                                    }
+                                }
+                            }
+
+                            .contact-detail-message-email,
+                            .contact-detail-call-number,
+                            .contact-detail-telegram-username {
+                                border-top: 1px solid rgb(230, 230, 230);
+                                padding-block: 20px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact-details-form {
+                margin-top: 100px;
+
+                .contact-details-form-bg {
+                    background: rgb(230, 230, 230);
+                    padding: 10px;
+                    border-radius: 25px;
+
+                    .contact-details-form-main-container {
+                        background: #fff;
+                        border-radius: 15px;
+                        padding: 45px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        .contact-details-form-container-txt {
+                            h2 {
+                                font-size: 25px;
+                                font-weight: 400;
+                                margin-bottom: 30px;
+                            }
+
+                            p {
+                                font-size: 20px;
+                                font-weight: 300;
+                            }
+                        }
+
+                        .contact-details-form-container {
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            form {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+
+                                .contact-form-name-label-container {
+                                    position: relative;
+                                    margin-bottom: 20px;
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    input {
+                                        width: 80%;
+                                        height: 50px;
+                                        border-radius: 10px;
+                                        border: 1px solid rgb(230, 230, 230);
+                                        outline: none;
+                                        padding: 5px 10px;
+                                        font-size: 18px;
+                                        transition: all 400ms;
+
+                                        &:focus {
+                                            border-color: rgb(255, 98, 10);
+                                        }
+
+                                        &:focus:valid {
+                                            border-color: rgb(255, 98, 10);
+                                        }
+
+                                        &:focus+.contact-form-name-placeholder,
+                                        &:valid+.contact-form-name-placeholder {
+                                            transform: translate(10px, -25px);
+                                            background: rgb(255, 98, 10);
+                                            color: #fff;
+                                            padding: 2px 5px;
+                                            border-radius: 5px;
+                                        }
+                                    }
+
+                                    .contact-form-name-placeholder {
+                                        color: rgb(194, 194, 194);
+                                        position: absolute;
+                                        top: 15px;
+                                        left: 80px;
+                                        transition: all 400ms;
+                                    }
+                                }
+
+                                .contact-form-email-label-container {
+                                    width: 100%;
+                                    position: relative;
+                                    margin-bottom: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    input {
+                                        width: 80%;
+                                        height: 50px;
+                                        border-radius: 10px;
+                                        border: 1px solid rgb(230, 230, 230);
+                                        outline: none;
+                                        padding: 5px 10px;
+                                        font-size: 18px;
+                                        transition: all 400ms;
+
+                                        &:focus {
+                                            border-color: rgb(255, 98, 10);
+                                        }
+
+                                        &:focus:valid {
+                                            border-color: rgb(255, 98, 10);
+                                        }
+
+                                        &:focus+.contact-form-email-placeholder,
+                                        &:valid+.contact-form-email-placeholder {
+                                            transform: translate(10px, -25px);
+                                            background: rgb(255, 98, 10);
+                                            color: #fff;
+                                            padding: 2px 5px;
+                                            border-radius: 5px;
+                                        }
+                                    }
+
+                                    .contact-form-email-placeholder {
+                                        color: rgb(194, 194, 194);
+                                        position: absolute;
+                                        top: 15px;
+                                        left: 80px;
+                                        transition: all 400ms;
+                                    }
+                                }
+
+                                .contact-form-textarea-container {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    textarea {
+                                        width: 80%;
+                                        height: 200px;
+                                        border: 1px solid rgb(230, 230, 230);
+                                        outline: none;
+                                        border-radius: 10px;
+                                        padding: 10px;
+                                        font-size: 20px;
+                                        color: rgb(194, 194, 194);
+                                        transition: all 400ms;
+                                        &:focus{
+                                            border-color: rgb(255, 98, 10);
+                                        }
+                                    }
+                                }
+
+                                .contact-form-btn-container {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-top: 30px;
+                                    .contact-form-sbmt-btn{
+                                        height: 50px;
+                                        width: 200px;
+                                        border: 1px solid #000;
+                                        background: #000;
+                                        font-size: 18px;
+                                        color: #fff;
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        cursor: pointer;
+                                        &:hover{
+                                            p:first-child{
+                                                margin-bottom: 0;
+                                                margin-top: -30px;
+                                            }
+                                            P:last-child{
+                                                margin-top: 10px;
+                                                margin-bottom: 3px;
+                                            }
+                                        }
+                                        p:first-child{
+                                            margin-bottom: 40px;
+                                            margin-top: 13px;
+                                            transition: all 400ms;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import Header from './components/Header/Header';
 import LanguageChanger from './components/LanguageChanger/LanguageChanger';
+import Contact from './pages/Contact/Contact';
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <>
       {/* <LanguageChanger /> */}
       {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
+      <Contact />
     </>
   )
 }
